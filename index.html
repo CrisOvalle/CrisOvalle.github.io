@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>THE LIBRARY!!!!</title>
+  <link rel="icon" type="image/x-icon" href="assets/libs.png">
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <nav>
+    <a id="icon-link" href="index.html"><img src="assets/libs-removebg-preview.png" class="icon" /></a>
+    <div class="tab">
+      <a href="#impact">The Impact</a>
+    </div>
+    <div class="tab">
+      <a href="#adults">Adult Resources</a>
+    </div>
+    <div class="tab">
+      <a href="#children">Children's Activities</a>
+    </div>
+    <div class="tab">
+    </div>
+  </nav>
+
+
+  <header>
+    <div class="header-left">
+      <h1>Impact of Public Library Closure</h1>
+    </div>
+    <div class="header-right">
+      <div><button id="dark-mode-btn" class="header-btn">Toggle Dark Mode</button></div>
+      <div><button id="motion-btn" class="header-btn">Reduce Motion</button></div>
+    </div>
+  </header>
+  <p id="intro"></p>
+
+  <h2 id="impact">The Impact</h2>
+  <p id="impact-text">Libraries provide valubale resources to communities, especially people in underrepresented groups.
+  </p>
+
+  <br>
+  <section class="video revealable">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2zfhvDhnA5U?si=q-frwLmczfw7xf1r"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </section>
+
+  <h2 id="adults">Adult Resources</h2>
+  <section class="resources revealable">
+    <div class="resource">
+      <a href="https://dallaslibrary2.org/adultlearning/english/general-english/">
+        <h3>English Courses</h3>
+        <img src="assets/English-classes-2.png" />
+        <p>The Dallas Public Library offers free General English classes at various locations throughout the city.
+          Classes are open to everyone, and they are always free. Classes last 10 weeks, and they are offered in the
+          Spring and Fall. Some locations also have summer classes. There’s no limit to the number of classes you can
+          take, so you can practice and learn English with the library for as long as you’re ready. For advanced
+          speakers, we also offer conversation classes.</p>
+      </a>
+    </div>
+    <div class="resource">
+      <a href="https://dallaslibrary2.org/adultlearning/techskills/beginner/">
+        <h3>Computer Literacy</h3>
+        <img src="assets/computer.jpg" />
+        <p>Various Libraries provide courses on computer literacy, internet safety, online job searching, web browsing,
+          and much more for people who are new to the internet and wish to understand technology better.</p>
+      </a>
+    </div>
+    <div class="resource">
+      <a href="https://dallaslibrary2.org/adultlearning/ged/">
+        <h3>GED Classes</h3>
+        <img src="assets/ged.png" />
+        <p>Have you been thinking about getting your High School Equivalency Certificate by taking the GED? The library
+          can help you through every step of the way. The Dallas Public Library offers free in-person classes to help
+          you prepare for the GED tests. The library operates an official GED Testing Center located at the J. Erik
+          Jonsson Central Library. Scholarships are available to help pay for the test.</p>
+      </a>
+    </div>
+  </section>
+
+  <br>
+
+  <h2 id="children">Children's Activities</h2>
+  <section class="resources revealable">
+    <div class="resource">
+      <h3>Lunches</h3>
+      <img src="" />
+      <p>Lunches</p>
+    </div>
+    <div class="resource">
+      <h3>Summer Reading</h3>
+      <img src="" />
+      <p>Summer Reading</p>
+    </div>
+    <div class="resource">
+      <h3>IDK Yet</h3>
+      <img src="" />
+      <p>IDK Yet</p>
+    </div>
+  </section>
+
+  <div id="playlistModal" class="modal">
+    <div id="modal-content">
+      <span class="close">&times;</span>
+      <div class="modal-header">
+        <div class="modal-left">
+          <img class="bookImg" src="assets/image-removebg-preview (1).png" />
+          <img class="bookImg" src="assets/image-removebg-preview (2).png" />
+          <img class="bookImg" src="assets/image-removebg-preview.png" />
+        </div>
+        <div class="modal-right">
+          <h2 id="playlist-title">Playlist Title</h2>
+          <h3 id="playlist-creator">Playlist Creator</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <h2>Sign Our Petition!!!</h2>
+
+  <div class="petition revealable">
+    <div class="petition-details">
+      <p>
+        We are deeply concerned about the extreme rhetoric increasingly directed at our public libraries. Such divisive
+        language not only misrepresents the mission of these vital institutions but also sows discord within our
+        community. Libraries are pillars of free expression, education, and community engagement. It is crucial that we
+        address and counteract this harmful rhetoric to preserve the integrity of our libraries and ensure they remain
+        safe, inclusive spaces for all members of our community.
+      </p>
+
+      <form id="form">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <input type="submit" value="Sign Now" id="submit">
+
+      </form>
+    </div>
+    <div id="signatures">
+      <p>Signatures So Far: <span id="signature-count">0</span></p>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+
+
+
+  <footer>
+    <h3>External Resources:</h3>
+    <a href="https://www.lsslibraries.com/the-impact-of-library-closures/" target="_blank">THE IMPACT OF LIBRARY
+      CLOSURES</a>
+    <a href="https://www.ala.org/aboutala/offices/ppo/resources/benefitspublic" target="_blank">ALA The Benefits of
+      Public Programming
+    </a>
+    <a href="https://dallaslibrary2.org/" target="_blank">Dallas Public Library Site</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
